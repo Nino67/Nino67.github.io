@@ -116,10 +116,10 @@
 
   //////////////////////////////////////////////////////////////////////////////
   // build #scenes-3
-    // new ScrollMagic.Scene({triggerElement: "#scene-3"})
-    //   // .setTween("#scene-1 > div", {y: "0%", ease: Linear.easeNone})
-    //   // .addIndicators({name:"scene-1"});
-    //   .addTo(controller);
+    new ScrollMagic.Scene({triggerElement: "#scene-3"})
+      // .setTween("#scene-1 > div", {y: "0%", ease: Linear.easeNone})
+      // .addIndicators({name:"scene-1"});
+      .addTo(controller);
     //   //////////////////////////////////////////////////////////////////////////////
       //////////////////////////////////////////////////////////////////////////////
 
