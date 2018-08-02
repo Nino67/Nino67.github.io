@@ -87,8 +87,8 @@
 
       // three.js status panel game loop update
       // stats.begin();
-      //   update();
-      //   render();
+         update();
+         render();
       // stats.end();
 
     };
