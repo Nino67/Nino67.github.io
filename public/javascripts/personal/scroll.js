@@ -50,7 +50,7 @@
     document.getElementById("scene-2").appendChild(renderer.domElement);
 
     // three.js mouse screen controls.... interferes with scroll.js mouse actions
-    // controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
 
     // load a image resource
     var texture = new THREE.TextureLoader().load( 'public/images/rolly_award_dinner.jpg' );
@@ -113,11 +113,11 @@
 
   //////////////////////////////////////////////////////////////////////////////
   // build #scenes-3
-    new ScrollMagic.Scene({triggerElement: "#scene-3"})
-      // .setTween("#scene-1 > div", {y: "0%", ease: Linear.easeNone})
-      // .addIndicators({name:"scene-1"});
-      .addTo(controller);
-      //////////////////////////////////////////////////////////////////////////////
+    // new ScrollMagic.Scene({triggerElement: "#scene-3"})
+    //   // .setTween("#scene-1 > div", {y: "0%", ease: Linear.easeNone})
+    //   // .addIndicators({name:"scene-1"});
+    //   .addTo(controller);
+    //   //////////////////////////////////////////////////////////////////////////////
       //////////////////////////////////////////////////////////////////////////////
 
 
