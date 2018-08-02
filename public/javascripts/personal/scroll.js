@@ -53,7 +53,7 @@
     // controls = new THREE.OrbitControls(camera, renderer.domElement);
 
     // load a image resource
-    var texture = new THREE.TextureLoader().load( 'images/rolly_award_dinner.jpg' );
+    var texture = new THREE.TextureLoader().load( 'public/images/rolly_award_dinner.jpg' );
 
     var geometry = new THREE.BoxGeometry( 2, 2, 2 );
     var material = new THREE.MeshBasicMaterial( { map: texture } );
