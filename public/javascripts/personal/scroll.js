@@ -67,7 +67,7 @@
 
 
 
-    camera.position.set = (0, 4, 7;
+    camera.position.set = (0, 4, 7);
 
     window.addEventListener("resize", function() {
       var width = window.innerWidth;
