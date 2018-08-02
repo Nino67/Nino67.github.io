@@ -10,11 +10,7 @@
   // build #scenes-0
   new ScrollMagic.Scene({triggerElement: "#scene-0"})
     //.setTween("#scene-0 > div", {y: "0%", ease: Linear.easeNone})
-    .addIndicators(
-      {
-        name:"scene-0"
-      }
-    )
+    // .addIndicators({name:"scene-0"});
     .addTo(controller);
     TweenMax.to("#content-scene-0", 10, {opacity:1});
     //////////////////////////////////////////////////////////////////////////////
@@ -25,12 +21,8 @@
 //////////////////////////////////////////////////////////////////////////////
 // build #scenes-1
   new ScrollMagic.Scene({triggerElement: "#scene-1"})
-    .setTween("#scene-1 > div", {y: "0%", ease: Linear.easeNone})
-    .addIndicators(
-      {
-        name:"scene-1"
-      }
-    )
+    // .setTween("#scene-1 > div", {y: "0%", ease: Linear.easeNone})
+    // .addIndicators({name:"scene-1"});
     .addTo(controller);
     //////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////
@@ -40,17 +32,13 @@
   // build #scenes-0
   new ScrollMagic.Scene({triggerElement: "#scene-2"})
     // .setTween("#scene-2 > div", {y: "0%", ease: Linear.easeNone})
-    .addIndicators(
-      {
-        name:"scene-2"
-      }
-    )
+    // .addIndicators({name:"scene-2"});
     .addTo(controller);
 
     // Status viewer
-    var stats = new Stats();
-    stats.showPanel( 0 ); // 0: fps, 1: ms, 2: mb, 3+: custom
-    document.getElementById("scene-2").appendChild( stats.dom );
+    // var stats = new Stats();
+    // stats.showPanel( 0 ); // 0: fps, 1: ms, 2: mb, 3+: custom
+    // document.getElementById("scene-2").appendChild( stats.dom );
 
 
     var scene = new THREE.Scene();
@@ -60,6 +48,7 @@
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById("scene-2").appendChild(renderer.domElement);
 
+    // three.js mouse screen controls.... interferes with scroll.js mouse actions
     // controls = new THREE.OrbitControls(camera, renderer.domElement);
 
     var geometry = new THREE.TorusGeometry( 10, 3, 16, 32 );
