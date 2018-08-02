@@ -96,10 +96,15 @@ background-size:cover;
 }
 
 #scene-2 {
-	/*width: 100%;*/
+	width: 100%;
+	height: auto;
 	opacity: 0;
 }
 
+#scene-3 {
+	width: 100%;
+	height: auto;
+}
 /*.box {
   display: block;
 	top: 250px;
