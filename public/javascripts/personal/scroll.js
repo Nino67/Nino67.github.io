@@ -54,7 +54,12 @@
     var geometry = new THREE.TorusGeometry( 10, 3, 16, 32 );
     var material = new THREE.MeshBasicMaterial( { color: 0x00ff00, wireframe: true } );
     var torus = new THREE.Mesh( geometry, material );
-    scene.add( torus );
+
+    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+    var material = new THREE.MeshBasicMaterial( {color: 0x00ff00}, wireframe: true );
+    var cube = new THREE.Mesh( geometry, material );
+
+    scene.add( torus, cube );
 
     // var geometry = new THREE.BoxGeometry( 1, 1, 1 );
     // var material = new THREE.MeshBasicMaterial( {color: 0x00ff00}, wireframe: true );
