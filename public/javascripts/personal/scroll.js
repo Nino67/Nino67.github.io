@@ -50,7 +50,7 @@
     document.getElementById("scene-2").appendChild(renderer.domElement);
 
     // three.js mouse screen controls.... interferes with scroll.js mouse actions
-    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    //controls = new THREE.OrbitControls(camera, renderer.domElement);
 
     // load a image resource
     var texture = new THREE.TextureLoader().load( 'public/images/rolly_award_dinner.jpg' );
@@ -68,7 +68,7 @@
 
 
 
-    camera.position.set = (0, 4, 7);
+    camera.position.z = 10;
 
     camera.lookAt( new THREE.Vector3() );
 
