@@ -85,6 +85,7 @@
     var update = function() {
     //    torus.rotation.x += 0.01;
     //    torus.rotation.y += 0.005;
+    cube.rotation.x += 0.001;
     cube.rotation.y += 0.01;
     };
 
