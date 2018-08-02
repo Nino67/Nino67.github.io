@@ -82,6 +82,9 @@ background-size:cover;
 }
 
 #scene-1 {
+	width: 100%;
+	height: auto;
+	display: table;
 	padding: .5em;
 }
 
