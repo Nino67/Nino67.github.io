@@ -42,24 +42,23 @@
 
 
     var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    var camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 1500);
 
     var renderer = new THREE.WebGLRenderer();
+    renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById("scene-2").appendChild(renderer.domElement);
 
     // three.js mouse screen controls.... interferes with scroll.js mouse actions
     // controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-    var geometry = new THREE.TorusGeometry( 10, 3, 16, 32 );
-    var material = new THREE.MeshBasicMaterial( { color: 0x00ff00, wireframe: true } );
-    var torus = new THREE.Mesh( geometry, material );
+    // load a image resource
+    var texture = new THREE.TextureLoader().load( 'images/rolly_award_dinner.jpg' );
 
-    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    var material = new THREE.MeshBasicMaterial( {color: 0x00ff00}, wireframe: true });
+    var geometry = new THREE.BoxGeometry( 2, 2, 2 );
+    var material = new THREE.MeshBasicMaterial( { map: texture } );
     var cube = new THREE.Mesh( geometry, material );
-
-    scene.add( torus, cube );
+    scene.add( cube );
 
     // var geometry = new THREE.BoxGeometry( 1, 1, 1 );
     // var material = new THREE.MeshBasicMaterial( {color: 0x00ff00}, wireframe: true );
@@ -68,7 +67,7 @@
 
 
 
-    camera.position.z = 25;
+    camera.position.set = (0, 4, 7;
 
     window.addEventListener("resize", function() {
       var width = window.innerWidth;
@@ -81,8 +80,9 @@
 
     // Game logic
     var update = function() {
-       torus.rotation.x += 0.01;
-       torus.rotation.y += 0.005;
+    //    torus.rotation.x += 0.01;
+    //    torus.rotation.y += 0.005;
+    cube.rotation.y += 0.005;
     };
 
 
