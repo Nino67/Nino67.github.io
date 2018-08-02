@@ -68,6 +68,7 @@
 
 
     camera.position.set = (0, 4, 7);
+    camera.lookAt( new THREE.Vector3() );
 
     window.addEventListener("resize", function() {
       var width = window.innerWidth;
@@ -82,7 +83,7 @@
     var update = function() {
     //    torus.rotation.x += 0.01;
     //    torus.rotation.y += 0.005;
-    cube.rotation.y += 0.005;
+    cube.rotation.y += 0.01;
     };
 
 
@@ -106,7 +107,7 @@
     };
 
     GameLoop();
-    TweenMax.to("#scene-2", 10, {opacity:1});
+    TweenMax.to("#scene-2", 1, {opacity:1});
   //////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////
 
