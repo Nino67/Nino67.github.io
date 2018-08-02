@@ -55,7 +55,7 @@
     // load a image resource
     var texture = new THREE.TextureLoader().load( 'public/images/rolly_award_dinner.jpg' );
 
-    var geometry = new THREE.BoxGeometry( 2, 2, 2 );
+    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
     // var material = new THREE.MeshBasicMaterial( { map: texture } );
     var material = new THREE.MeshBasicMaterial( {color: 0x00ff00, wireframe: true} );
     var cube = new THREE.Mesh( geometry, material );
@@ -69,6 +69,7 @@
 
 
     camera.position.set = (0, 4, 7);
+
     camera.lookAt( new THREE.Vector3() );
 
     window.addEventListener("resize", function() {
