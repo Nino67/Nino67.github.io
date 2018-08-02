@@ -85,10 +85,11 @@
 
       requestAnimationFrame(GameLoop);
 
-      stats.begin();
-        update();
-        render();
-      stats.end();
+      // three.js status panel game loop update
+      // stats.begin();
+      //   update();
+      //   render();
+      // stats.end();
 
     };
 
