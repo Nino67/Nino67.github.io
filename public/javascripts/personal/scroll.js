@@ -56,7 +56,7 @@
     var torus = new THREE.Mesh( geometry, material );
 
     var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    var material = new THREE.MeshBasicMaterial( {color: 0x00ff00}, wireframe: true );
+    var material = new THREE.MeshBasicMaterial( {color: 0x00ff00}, wireframe: true });
     var cube = new THREE.Mesh( geometry, material );
 
     scene.add( torus, cube );
