@@ -51,10 +51,17 @@
     // three.js mouse screen controls.... interferes with scroll.js mouse actions
     // controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-    var geometry = new THREE.TorusGeometry( 10, 3, 16, 32 );
-    var material = new THREE.MeshBasicMaterial( { color: 0x00ff00, wireframe: true } );
-    var torus = new THREE.Mesh( geometry, material );
-    scene.add( torus );
+    // var geometry = new THREE.TorusGeometry( 10, 3, 16, 32 );
+    // var material = new THREE.MeshBasicMaterial( { color: 0x00ff00, wireframe: true } );
+    // var torus = new THREE.Mesh( geometry, material );
+    // scene.add( torus );
+
+    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+    var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+    var cube = new THREE.Mesh( geometry, material );
+    scene.add( cube );
+
+
 
     camera.position.z = 25;
 
@@ -106,7 +113,6 @@
       .addTo(controller);
       //////////////////////////////////////////////////////////////////////////////
       //////////////////////////////////////////////////////////////////////////////
-
 
 
 
