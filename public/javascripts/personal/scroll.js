@@ -57,7 +57,7 @@
 
     var geometry = new THREE.BoxGeometry( 2, 2, 2 );
     // var material = new THREE.MeshBasicMaterial( { map: texture } );
-    var material = new THREE.MeshBasicMaterial( {color: 0x00ff00}, wireframe: true );
+    var material = new THREE.MeshBasicMaterial( {color: 0x00ff00, wireframe: true} );
     var cube = new THREE.Mesh( geometry, material );
     scene.add( cube );
 
