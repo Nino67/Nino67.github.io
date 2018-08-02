@@ -101,20 +101,20 @@ background-size:cover;
 	opacity: 0;
 }
 
-#scene-3 {
+/*#scene-3 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
 	height: auto;
 	padding: 1em;
 	background-color: #eee;
-}
+}*/
 
-#scene-3, iframe {
+/*#scene-3, iframe {
 	width: 100%;
 	height: auto;
 	padding: 1em;
-}
+}*/
 
 /*.box {
   display: block;
