@@ -18,7 +18,7 @@
     console.log(barWidth);
 
     var options = {
-      horizontalPixelsCount: (225),
+      horizontalPixelsCount: Math.floor(window.innerWidth / 5),
       verticalPixelsCount: 5,
       pixelSize: 7,
       // disabledPixelColor: '#404040',
