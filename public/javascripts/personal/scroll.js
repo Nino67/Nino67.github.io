@@ -14,7 +14,9 @@
     .addTo(controller);
     // TweenMax.to("#content-scene-0", 10, {opacity:1});
 
-
+    var barWidth = (windo.innerWidth / 5);
+    console.log(barWidth);
+    
     var options = {
       horizontalPixelsCount: (window.innerWidth / 5),
       verticalPixelsCount: 5,
