@@ -12,7 +12,21 @@
     //.setTween("#scene-0 > div", {y: "0%", ease: Linear.easeNone})
     // .addIndicators({name:"scene-0"});
     .addTo(controller);
-    TweenMax.to("#content-scene-0", 10, {opacity:1});
+    // TweenMax.to("#content-scene-0", 10, {opacity:1});
+
+    var options = {
+      horizontalPixelsCount: 250,
+      verticalPixelsCount: 5,
+      pixelSize: 7,
+      disabledPixelColor: '#404040',
+      enabledPixelColor: 'red',
+      pathToPixelImage: 'images/pixel.png',
+      stepDelay: 40,
+      pixelRatio: 0.7,
+      runImmidiatly: true
+    };
+    $('.led-display-div').leddisplay($.extend(options, {pixelSize: 7}));
+
     //////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////
 
@@ -110,7 +124,7 @@
     };
 
     GameLoop();
-    TweenMax.to("#scene-2", 1, {opacity:1});
+    TweenMax.to("#scene-2", 10, {opacity:1});
   //////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////
 
