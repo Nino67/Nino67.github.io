@@ -48,6 +48,11 @@ background-size:cover;
 background-position: center;
 }*/
 
+.led-display-div {
+	padding-top: 100px;
+}
+
+
 #scene-0 {
 width : 100vw;
 height: 45vw; calc(100vw * .5);
