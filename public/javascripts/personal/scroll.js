@@ -26,7 +26,7 @@
       enabledPixelColor: 'yellow',
       pathToPixelImage: 'public/images/pixel.png',
       stepDelay: 40,
-      pixelRatio: 0.7,
+      pixelRatio: 0.5,
       runImmidiatly: true
     };
     $('.led-display-div').leddisplay($.extend(options, {pixelSize: 7}));
