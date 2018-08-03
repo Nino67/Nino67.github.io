@@ -14,8 +14,9 @@
     .addTo(controller);
     // TweenMax.to("#content-scene-0", 10, {opacity:1});
 
+
     var options = {
-      horizontalPixelsCount: 250,
+      horizontalPixelsCount: (window.innerWidth / 5),
       verticalPixelsCount: 5,
       pixelSize: 7,
       disabledPixelColor: '#404040',
