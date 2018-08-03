@@ -20,7 +20,7 @@
       pixelSize: 7,
       disabledPixelColor: '#404040',
       enabledPixelColor: 'red',
-      pathToPixelImage: 'images/pixel.png',
+      pathToPixelImage: 'public/images/pixel.png',
       stepDelay: 40,
       pixelRatio: 0.7,
       runImmidiatly: true
