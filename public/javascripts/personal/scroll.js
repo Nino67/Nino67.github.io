@@ -18,14 +18,14 @@
     console.log(barWidth);
 
     var options = {
-      horizontalPixelsCount: Math.floor(window.innerWidth / 5),
+      horizontalPixelsCount: Math.floor(window.innerWidth / 15),
       verticalPixelsCount: 5,
       pixelSize: 7,
       // disabledPixelColor: '#404040',
       disabledPixelColor: '#303030',
       enabledPixelColor: 'yellow',
       pathToPixelImage: 'public/images/pixel.png',
-      stepDelay: 40,
+      stepDelay: 35,
       pixelRatio: 0.5,
       runImmidiatly: true
     };
