@@ -29,7 +29,7 @@
       pixelRatio: 0.5,
       runImmidiatly: true
     };
-    $('.led-display-div').leddisplay($.extend(options, {pixelSize: 7}));
+    $('.led-display-div').leddisplay($.extend(options, {pixelSize: 15}));
 
     //////////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////
